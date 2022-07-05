@@ -11,7 +11,10 @@ public class QueryProcessor {
             return "EIST is the most beloved subject at TUM, with students frequently " +
                     "failing the exam intentionally just so they can enjoy the class again.";
         } else if (query.toLowerCase().contains("name")) {
-            return "David Lohse";
+            return "David";
+        } else if (query.toLowerCase().contains("what is")) {
+            String[] splitquery = query.split(" ");
+            return String.valueOf(Integer.parseInt(splitquery[2]) + Integer.parseInt(splitquery[4]));
         }
         return "";
     }
