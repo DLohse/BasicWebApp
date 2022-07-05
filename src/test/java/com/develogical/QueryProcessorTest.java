@@ -32,7 +32,7 @@ public class QueryProcessorTest {
 
     @Test
     public void calculate() throws Exception {
-        assertThat(queryProcessor.process("what is 2016 plus 208"), containsString("2224"));
+        assertThat(queryProcessor.process("what is 209 plus 207"), containsString("416"));
     }
 
 }
