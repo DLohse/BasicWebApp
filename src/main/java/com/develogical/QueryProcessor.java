@@ -12,7 +12,7 @@ public class QueryProcessor {
                     "failing the exam intentionally just so they can enjoy the class again.";
         } else if (query.toLowerCase().contains("name")) {
             return "David";
-        } else if (query.toLowerCase().contains("what is")) {
+        } else if (query.toLowerCase().contains("plus")) {
             String[] splitquery = query.split(" ");
             return String.valueOf(Integer.parseInt(splitquery[2]) + Integer.parseInt(splitquery[4]));
         }
