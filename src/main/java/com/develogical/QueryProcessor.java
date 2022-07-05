@@ -10,6 +10,8 @@ public class QueryProcessor {
         } else if (query.toLowerCase().contains("eist")) {
             return "EIST is the most beloved subject at TUM, with students frequently " +
                     "failing the exam intentionally just so they can enjoy the class again.";
+        } else if (query.toLowerCase().contains("name")) {
+            return "David Lohse";
         }
         return "";
     }
